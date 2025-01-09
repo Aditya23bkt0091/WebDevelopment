@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div and Span Example</title>
+  <style>
+    body, h2, p, a {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Verdana', sans-serif;
+      background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+      color: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #ff6f91;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      color: #ff4e78;
+      font-weight: bold;
+    }
+
+    a {
+      color: #ff6f91;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+    }
+
+    .box {
+      background: #ff9a9e;
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 30%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .box:hover {
+      background: #ff6f91;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Div and Span Demonstration</h2>
+    <p>
+      The <span class="highlight">div</span> tag is used to group elements together. It is a block-level element.
+    </p>
+    <p>
+      The <span class="highlight">span</span> tag is used to style specific parts of inline content.
+    </p>
+
+    <div class="row">
+      <div class="box">This is a div</div>
+      <div class="box">Another div</div>
+      <div class="box">Yet another div</div>
+    </div>
+
+  </div>
+</body>
+</html>

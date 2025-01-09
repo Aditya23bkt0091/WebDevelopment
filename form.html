@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Team Feedback Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form action="process_form.php">
+    <h1 class="form-header">Team Feedback Form</h1>
+
+    <section>
+      <label for="fullName">Full Name</label>
+      <input type="text" name="fullName" id="fullName" placeholder="Your full name" required>
+
+      <label for="designation">Designation</label>
+      <input type="text" name="designation" id="designation" placeholder="Your designation" required>
+
+      <label for="emailAddress">Email Address</label>
+      <input type="email" name="emailAddress" id="emailAddress" placeholder="Your email address" required>
+
+      <label for="joinDate">Joining Date</label>
+      <input type="date" name="joinDate" id="joinDate" required>
+
+      <label for="bonusAmount">Bonus Amount</label>
+      <input type="number" name="bonusAmount" id="bonusAmount" placeholder="Bonus received (if any)" required>
+
+      <div class="checkbox-section">
+        <input type="checkbox" name="isEligibleForBonus" id="isEligibleForBonus" checked>
+        <label for="isEligibleForBonus">Eligible for Bonus?</label>
+      </div>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>Gender Identity</legend>
+        <div class="radio-options">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+      </fieldset>
+    </section>
+
+    <section>
+      <label for="location">Current City</label>
+      <select name="location" id="location">
+        <option value="chennai">Chennai</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="other">Other</option>
+      </select>
+
+      <div id="additionalCity">
+        <label for="cityName">Specify City (if Other)</label>
+        <input type="text" id="cityName" name="cityName" placeholder="Your city name">
+      </div>
+    </section>
+
+    <section>
+      <label for="careerGoals">Your Career Goals</label>
+      <textarea name="careerGoals" id="careerGoals" cols="30" rows="4" placeholder="Describe your career aspirations"></textarea>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>Company Vehicle Details</legend>
+        <div class="radio-options">
+          <label><input type="radio" name="vehicle" value="yes"> Vehicle Assigned</label>
+          <label><input type="radio" name="vehicle" value="no"> No Vehicle Assigned</label>
+        </div>
+
+        <label for="vehicleType">Select Vehicle Type</label>
+        <select name="vehicleType" id="vehicleType">
+          <option value="indica">Indica</option>
+          <option value="swift" selected>Swift</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="vehicleName">Specify Vehicle Name (if Other)</label>
+        <input type="text" id="vehicleName" name="vehicleName" placeholder="Vehicle name">
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="father">Father's Name</label>
+        <input type="text" name="father" id="father" required>
+
+        <label for="mother">Mother's Name</label>
+        <input type="text" name="mother" id="mother" required>
+
+        <label for="residentialAddress">Residential Address</label>
+        <input type="text" name="residentialAddress" id="residentialAddress" required>
+
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" name="phoneNumber" id="phoneNumber" required>
+      </fieldset>
+    </section>
+
+    <div class="action-buttons">
+      <button type="submit">Submit Form</button>
+      <button type="reset">Reset Details</button>
+    </div>
+  </form>
+</body>
+</html>
